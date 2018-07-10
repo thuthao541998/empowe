@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pane" prefHeight="496.0" prefWidth="286.0" style="-fx-background-color: FFC300;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="empowe.SigninController">
+    <children>
+        <Pane fx:id="content_area" prefHeight="496.0" prefWidth="285.0">
+            <children>
+                <Group layoutX="27.0" layoutY="-60.0">
+                    <children>
+                        <Text layoutX="65.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Username" wrappingWidth="146.13670349121094" />
+                        <ImageView fitHeight="28.0" fitWidth="32.0" layoutX="19.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../resoures/img/username.png" />
+                            </image>
+                        </ImageView>
+                        <TextField layoutX="19.0" layoutY="233.0" prefHeight="16.0" prefWidth="193.0" style="-fx-background-color: FEE0F5;" />
+                    </children>
+                </Group>                 
+                <Group layoutX="20.0" layoutY="8.0">
+                    <children>
+                        <Text layoutX="72.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Password" wrappingWidth="146.13670349121094" />
+                        <ImageView fitHeight="30.0" fitWidth="34.0" layoutX="26.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../resoures/img/password.png" />
+                            </image>
+                        </ImageView>
+                        <TextField layoutX="26.0" layoutY="235.0" prefHeight="22.0" prefWidth="193.0" style="-fx-background-color: FEE0F5;" />
+                    </children>
+                </Group>
+                <Button layoutX="77.0" layoutY="288.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="131.0" style="-fx-background-color: A90066;" text="Sign in" textFill="#efff00">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Button>
+                <Text layoutX="23.0" layoutY="362.0" onMouseClicked="#openSignup" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 16;" text="Do not have an account? Sign up!">
+                    <font>
+                        <Font size="9.0" />
+                    </font>
+                </Text>
+            </children> 
+        </Pane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RegisterController">
+    <children>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #FF0055;">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@jingle-bell.png" />
+               </image>
+            </ImageView>
+            <Label text="Golden Bell" textFill="WHITE">
+               <font>
+                  <Font name="Hollywood" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Pane fx:id="content_area" layoutX="300.0" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: FFE6EE;">
+         <children>
+            <Label layoutX="25.0" layoutY="14.0" prefHeight="23.0" prefWidth="100.0" text="WELCOME TO " textFill="#545454">
+               <font>
+                  <Font name="Impact" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="70.0" prefHeight="17.0" prefWidth="109.0" text="Please sign up" textFill="#979494">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="123.0" text="Email">
+               <font>
+                  <Font name="Javanese Text" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="154.0" text="Username">
+               <font>
+                  <Font name="Javanese Text" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="186.0" text="Password">
+               <font>
+                  <Font name="Javanese Text" size="12.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="email" layoutX="133.0" layoutY="123.0" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: FBCDDC;" />
+            <TextArea fx:id="username" layoutX="133.0" layoutY="154.0" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: FBCDDC;" />
+            <Button fx:id="btnRegister" layoutX="29.0" layoutY="271.0" mnemonicParsing="false" onMouseClicked="#btnRegister" prefHeight="25.0" prefWidth="255.0" style="-fx-background-color: F9A6C1;" text="Register" />
+            <Label layoutX="25.0" layoutY="37.0" prefHeight="33.0" prefWidth="124.0" text="Golden Bell">
+               <font>
+                  <Font name="Hollywood" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="108.0" layoutY="313.0" onMouseClicked="#openLogin" prefHeight="17.0" prefWidth="109.0" text="Already got an account?" textFill="#545252">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="215.0" text="Confirm Password">
+               <font>
+                  <Font name="Javanese Text" size="12.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="password" layoutX="134.0" layoutY="190.0" prefHeight="25.0" prefWidth="150.0" />
+            <PasswordField layoutX="134.0" layoutY="219.0" />
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>
